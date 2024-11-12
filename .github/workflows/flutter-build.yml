@@ -932,8 +932,7 @@ jobs:
         id: setup-ndk
         with:
           ndk-version: ${{ env.NDK_VERSION }}
-          add-to-path: true
-          local-cache: true
+          add-to-path: false
 
       - name: Setup vcpkg with Github Actions binary cache
         uses: lukka/run-vcpkg@v11
